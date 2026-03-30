@@ -73,3 +73,6 @@ O que você deve entregar: Um arquivo no formato PDF, conforme template fornecid
   - O estudante elaborou o formulário de cadastro do sistema web e serviços oferecidos com agendamento, contendo todos os itens especificados, gerando comprometimento com a entrega.
 - Uso de recursos para tornar o sistema web com acessibilidade
   - O estudante incluiu recursos para tornar o sistema web com acessibilidade, gerando comprometimento com a entrega.
+## Site publicado
+
+[Clique aqui para abrir](https://wzuqui.github.io/pucr-fundamentos-sistemas-web-projetos-fase-2/)
