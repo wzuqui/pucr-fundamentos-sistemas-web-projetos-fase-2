@@ -1,0 +1,105 @@
+/* Estilo customizado - Petshop WillPet */
+
+/* Corpo com flexbox para footer no fundo */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Carrossel */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Botões prev/next do carrossel com fundo escuro para ficarem visíveis */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Indicadores do carrossel mais visíveis */
+.carousel-indicators button {
+  background-color: #198754;
+  opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
+
+/* Cards de produto  */
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Imagens dos cards */
+.card-img-top {
+  height: 250px;
+  object-fit: contain;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+/* Tabela de serviços */
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+/* Formulários - foco verde */
+.form-control:focus,
+.form-check-input:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+/* Animação de fade-in para saudação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#saudacao {
+  animation: fadeIn 1s ease;
+}
+
+/* Link de pular navegação (acessibilidade) */
+.visually-hidden-focusable:focus {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #198754;
+  color: #fff;
+  padding: 10px 20px;
+}
